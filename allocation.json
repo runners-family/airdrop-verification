@@ -1,0 +1,192 @@
+{
+  "schema": "runners-final-allocation-verification-v1",
+  "decimals": 6,
+  "supply_base_units": 1000000000000000,
+  "wallet_count": 144542,
+  "category_memberships": 156259,
+  "reference_slot": 458146998,
+  "claims_sha256": "4d78c121a841c28c3a02963a0bf5266166aa963e42eafe60d615f715ebd731a2",
+  "expected_merkle_root": "256aa62ae42df907f0630982248f01af34b166af952a96b7c4d0af2c3a7fcbbb",
+  "groups": [
+    {
+      "id": "solana_seeker",
+      "label": "Seeker",
+      "rule": "fixed_share",
+      "share_percent": "20",
+      "wallets_file": "wallets/solana_seeker.txt",
+      "wallets_sha256": "403588ac8bbcfafb876bb196592d527bd77b2edd8d2c4cf908acf1d6f4529ebc",
+      "wallets": 37683,
+      "total_base_units": 200000000000000
+    },
+    {
+      "id": "xstocks",
+      "label": "xStocks",
+      "rule": "fixed_share",
+      "share_percent": "3.5",
+      "wallets_file": "wallets/xstocks.txt",
+      "wallets_sha256": "a0420597b2d61ef7a0a727b25285f678562127958bde234268573310b21b396a",
+      "wallets": 17129,
+      "total_base_units": 35000000000000
+    },
+    {
+      "id": "zec",
+      "label": "ZEC",
+      "rule": "fixed_share",
+      "share_percent": "1.5",
+      "wallets_file": "wallets/zec.txt",
+      "wallets_sha256": "3e5ae1bcfd7c392a6bf616ac73fe1516d250c53f60307e65f26b6455fab0eb26",
+      "wallets": 7907,
+      "total_base_units": 15000000000000
+    },
+    {
+      "id": "hype",
+      "label": "HYPE",
+      "rule": "fixed_share",
+      "share_percent": "1",
+      "wallets_file": "wallets/hype.txt",
+      "wallets_sha256": "c7c9e2689f7cbd9243c982f3a63ef2d424729060848a84e184f9ae39ccf99727",
+      "wallets": 6845,
+      "total_base_units": 10000000000000
+    },
+    {
+      "id": "solana_builder",
+      "label": "Builders",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 130000,
+      "wallets_file": "wallets/solana_builder.txt",
+      "wallets_sha256": "4d80943597fed63d1b7e52260e8134684952c347698ecad361cbd5797058d548",
+      "wallets": 197,
+      "total_base_units": 25610000000000
+    },
+    {
+      "id": "islanddao_participants",
+      "label": "IslandDAO",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 30000,
+      "wallets_file": "wallets/islanddao_participants.txt",
+      "wallets_sha256": "7462210a4af92dd89876e747c56f902431801c0dd0f3ab779d1a8b1635c0b4c8",
+      "wallets": 168,
+      "total_base_units": 5040000000000
+    },
+    {
+      "id": "squads_teams",
+      "label": "Squads teams",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 5000,
+      "wallets_file": "wallets/squads_teams.txt",
+      "wallets_sha256": "e7d465705e193f3612641aae7473f1f847297f679a01feb36ce63172bf8f8ebf",
+      "wallets": 12451,
+      "total_base_units": 62255000000000
+    },
+    {
+      "id": "ride_markets",
+      "label": "Ride",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 5000,
+      "wallets_file": "wallets/ride_markets.txt",
+      "wallets_sha256": "10be8302cfcedc341bbacee0dd0e5febc056c511782f510a85eeaecdaa865ebe",
+      "wallets": 316,
+      "total_base_units": 1580000000000
+    },
+    {
+      "id": "overpass",
+      "label": "Overpass",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 5000,
+      "wallets_file": "wallets/overpass.txt",
+      "wallets_sha256": "ef270fe952f442a6fbf13e8a64add8f622fe8dd791e6d59660b388f71e4d31d5",
+      "wallets": 5,
+      "total_base_units": 25000000000
+    },
+    {
+      "id": "p0",
+      "label": "P0",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 6000,
+      "wallets_file": "wallets/p0.txt",
+      "wallets_sha256": "59d7b36808ae2de34effbbbe5644c811988c1da5e63c46ffcf8e46c67f429ebc",
+      "wallets": 6754,
+      "total_base_units": 40524000000000
+    },
+    {
+      "id": "kamino",
+      "label": "Kamino",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 4000,
+      "wallets_file": "wallets/kamino.txt",
+      "wallets_sha256": "65409ca7e6654eddf22a445d2cc6412557d73fd6d28a15d36b4104781d4657db",
+      "wallets": 14679,
+      "total_base_units": 58716000000000
+    },
+    {
+      "id": "hylo",
+      "label": "Hylo",
+      "rule": "fixed_per_wallet",
+      "tokens_per_wallet": 4000,
+      "wallets_file": "wallets/hylo.txt",
+      "wallets_sha256": "82f891eeaca9e007886a208ef31cb7dcc4f339486632ce2f382bf3e5f60204b7",
+      "wallets": 5295,
+      "total_base_units": 21180000000000
+    },
+    {
+      "id": "meteora_liquidity_provider",
+      "label": "Meteora LPs",
+      "rule": "remainder_pool",
+      "weight": "100000000",
+      "wallets_file": "wallets/meteora_liquidity_provider.txt",
+      "wallets_sha256": "d2e91c7fd3a8c0d35dbe1d765f097f3c7a3421811c0bb8d4e3d239e504c995c1",
+      "wallets": 15873,
+      "total_base_units": 129843160854088
+    },
+    {
+      "id": "phoenix_perps",
+      "label": "Phoenix",
+      "rule": "remainder_pool",
+      "weight": "95400000",
+      "wallets_file": "wallets/phoenix_perps.txt",
+      "wallets_sha256": "54528e4daac793b1294b6fcab371cfa47a1dd6a0966cda123f3324fa4c6e9a87",
+      "wallets": 5924,
+      "total_base_units": 123870375454800
+    },
+    {
+      "id": "symmetry",
+      "label": "Symmetry",
+      "rule": "remainder_pool",
+      "weight": "90000000",
+      "wallets_file": "wallets/symmetry.txt",
+      "wallets_sha256": "353377396685044386afd180320332ba76cdfa5b9b4813cc83349a13e1e3a865",
+      "wallets": 9496,
+      "total_base_units": 116858844768679
+    },
+    {
+      "id": "sanctum_inf",
+      "label": "Sanctum INF",
+      "rule": "remainder_per_wallet",
+      "weight_per_wallet": "180921000/23624",
+      "wallets_file": "wallets/sanctum_inf.txt",
+      "wallets_sha256": "c9bf9e5970f324309f6a5ceb73f0246221cbc548ac838f5b57473d7a53c4148b",
+      "wallets": 6012,
+      "total_base_units": 59782434508700
+    },
+    {
+      "id": "jupiter_lend",
+      "label": "Jupiter Lend",
+      "rule": "remainder_per_wallet",
+      "weight_per_wallet": "180921000/23624",
+      "wallets_file": "wallets/jupiter_lend.txt",
+      "wallets_sha256": "4a8ab6a62cee13adb2252f383f8ab2edb9e625d71d86a669d78ab732934efc48",
+      "wallets": 6040,
+      "total_base_units": 60060862347396
+    },
+    {
+      "id": "exponent",
+      "label": "Exponent",
+      "rule": "remainder_per_wallet",
+      "weight_per_wallet": "180921000/23624",
+      "wallets_file": "wallets/exponent.txt",
+      "wallets_sha256": "5153e7d072934cfb428b65aaa4e9b21db25406d5e7419765bc53ebf96c0be032",
+      "wallets": 3485,
+      "total_base_units": 34654322066337
+    }
+  ]
+}

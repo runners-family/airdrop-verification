@@ -1,0 +1,120 @@
+{
+  "schema": "runners-final-only-checksums-v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2545,
+      "sha256": "f45792ac3a769de81bf431b6e3ec729f9b6d068c408e537d9f55842208369535"
+    },
+    {
+      "path": "allocation.json",
+      "bytes": 6466,
+      "sha256": "af5c44f8247a2dd40d2b12d4b00f919aaa792874b6b964cdcb14831c9c27a1ee"
+    },
+    {
+      "path": "claims.csv",
+      "bytes": 8107012,
+      "sha256": "4d78c121a841c28c3a02963a0bf5266166aa963e42eafe60d615f715ebd731a2"
+    },
+    {
+      "path": "criteria.md",
+      "bytes": 4646,
+      "sha256": "a9db5711b824221684dc82aefd0a2826e9989ccb5dbc8afe2522a93f955171de"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 6133,
+      "sha256": "8b6e05280e80cbefa4cfb675b7b20655056a5edd1c7c4ad91789e078e39fa24f"
+    },
+    {
+      "path": "wallets/exponent.txt",
+      "bytes": 156624,
+      "sha256": "5153e7d072934cfb428b65aaa4e9b21db25406d5e7419765bc53ebf96c0be032"
+    },
+    {
+      "path": "wallets/hylo.txt",
+      "bytes": 237962,
+      "sha256": "82f891eeaca9e007886a208ef31cb7dcc4f339486632ce2f382bf3e5f60204b7"
+    },
+    {
+      "path": "wallets/hype.txt",
+      "bytes": 307616,
+      "sha256": "c7c9e2689f7cbd9243c982f3a63ef2d424729060848a84e184f9ae39ccf99727"
+    },
+    {
+      "path": "wallets/islanddao_participants.txt",
+      "bytes": 7553,
+      "sha256": "7462210a4af92dd89876e747c56f902431801c0dd0f3ab779d1a8b1635c0b4c8"
+    },
+    {
+      "path": "wallets/jupiter_lend.txt",
+      "bytes": 271448,
+      "sha256": "4a8ab6a62cee13adb2252f383f8ab2edb9e625d71d86a669d78ab732934efc48"
+    },
+    {
+      "path": "wallets/kamino.txt",
+      "bytes": 659780,
+      "sha256": "65409ca7e6654eddf22a445d2cc6412557d73fd6d28a15d36b4104781d4657db"
+    },
+    {
+      "path": "wallets/meteora_liquidity_provider.txt",
+      "bytes": 713263,
+      "sha256": "d2e91c7fd3a8c0d35dbe1d765f097f3c7a3421811c0bb8d4e3d239e504c995c1"
+    },
+    {
+      "path": "wallets/overpass.txt",
+      "bytes": 223,
+      "sha256": "ef270fe952f442a6fbf13e8a64add8f622fe8dd791e6d59660b388f71e4d31d5"
+    },
+    {
+      "path": "wallets/p0.txt",
+      "bytes": 303561,
+      "sha256": "59d7b36808ae2de34effbbbe5644c811988c1da5e63c46ffcf8e46c67f429ebc"
+    },
+    {
+      "path": "wallets/phoenix_perps.txt",
+      "bytes": 266206,
+      "sha256": "54528e4daac793b1294b6fcab371cfa47a1dd6a0966cda123f3324fa4c6e9a87"
+    },
+    {
+      "path": "wallets/ride_markets.txt",
+      "bytes": 14197,
+      "sha256": "10be8302cfcedc341bbacee0dd0e5febc056c511782f510a85eeaecdaa865ebe"
+    },
+    {
+      "path": "wallets/sanctum_inf.txt",
+      "bytes": 270198,
+      "sha256": "c9bf9e5970f324309f6a5ceb73f0246221cbc548ac838f5b57473d7a53c4148b"
+    },
+    {
+      "path": "wallets/solana_builder.txt",
+      "bytes": 8846,
+      "sha256": "4d80943597fed63d1b7e52260e8134684952c347698ecad361cbd5797058d548"
+    },
+    {
+      "path": "wallets/solana_seeker.txt",
+      "bytes": 1693614,
+      "sha256": "403588ac8bbcfafb876bb196592d527bd77b2edd8d2c4cf908acf1d6f4529ebc"
+    },
+    {
+      "path": "wallets/squads_teams.txt",
+      "bytes": 559475,
+      "sha256": "e7d465705e193f3612641aae7473f1f847297f679a01feb36ce63172bf8f8ebf"
+    },
+    {
+      "path": "wallets/symmetry.txt",
+      "bytes": 426781,
+      "sha256": "353377396685044386afd180320332ba76cdfa5b9b4813cc83349a13e1e3a865"
+    },
+    {
+      "path": "wallets/xstocks.txt",
+      "bytes": 769844,
+      "sha256": "a0420597b2d61ef7a0a727b25285f678562127958bde234268573310b21b396a"
+    },
+    {
+      "path": "wallets/zec.txt",
+      "bytes": 355389,
+      "sha256": "3e5ae1bcfd7c392a6bf616ac73fe1516d250c53f60307e65f26b6455fab0eb26"
+    }
+  ]
+}
