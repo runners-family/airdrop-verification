@@ -1,4 +1,6 @@
-# Local release review
+# Historical pre-publication review
+
+This records the completed review before publication. See `README.md` and `PUBLICATION.json` for the numbered release attachments and current download index; archive contents, replay executables and locked allocation are unchanged.
 
 The complete offline replay rebuilt all 18 category lists, the 3,386-wallet exclusion set and every gross award from the published historical captures. It reproduced **144,542 wallets, 156,259 stacked awards and exactly 1,000,000,000,000,000 base units**, with zero wallet, amount or CSV-byte differences. The original verifier also passed. See `REVIEW.json` and `REPLAY_RECEIPT.json` for measured results and pins.
 

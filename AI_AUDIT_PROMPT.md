@@ -11,4 +11,4 @@ Audit the pinned RUNNERS verification code and its separately pinned historical 
 
 Do not invent a PASS. A match to the captured inputs is not provider authentication or proof of global completeness. If an input, source proof, executable check or chain check is unavailable, label that specific claim NOT VERIFIED or NOT TESTED. End with verified findings, mismatches and missing evidence.
 
-This local candidate has not been published. Its new code/data pins must be supplied from the reviewed release when it is published; the older public commit verifies allocation from supplied final lists only.
+Use the code commit advertised by the historical evidence release at <https://github.com/runners-family/airdrop-verification/releases/tag/replay-v1-2026-10-21>. Evidence-index SHA-256: `1fa56336a7da5fb8f2406e98b4bbe891ea309d5e7ee45ba2c01cf95c67744cb2`. Data-manifest SHA-256: `9b536b62069f3dd38b752dcd3562fad05fe67ea30252d496965e0aab48e642cc`. Download the numbered archives using the README command. `PUBLICATION.json` explains the filename-only change from the historical review. The older base commit verifies allocation from supplied final lists only.

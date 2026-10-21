@@ -13,12 +13,12 @@ Use Python **3.10+** and Node **18+**. Python uses only the standard library. No
 Allow several gigabytes for the evidence and generated reports, and time for a full CPU replay. The local checks used Python 3.10 in an isolated offline environment. Cross-platform execution has not been independently tested.
 
 ```sh
-python3 -I -B fetch_data.py --index evidence-index.json --index-sha256 9fd895460c9dbe59c3e10b98cb805b1debc629b6bcd8814f4116920bf198689b --from-directory artifacts --destination evidence
+python3 -I -B fetch_data.py --index evidence-index.json --index-sha256 1fa56336a7da5fb8f2406e98b4bbe891ea309d5e7ee45ba2c01cf95c67744cb2 --base-url https://github.com/runners-family/airdrop-verification/releases/download/replay-v1-2026-10-21 --destination evidence
 python3 -I -B reproduce.py --data evidence --manifest-sha256 9b536b62069f3dd38b752dcd3562fad05fe67ea30252d496965e0aab48e642cc --all --out replay-output
 python3 -I -B verify.py
 ```
 
-The local candidate includes the exact index, data-manifest pin and measured results in the separate local release report `REVIEW.json`. That report identifies the validated implementation commit; it is generated after that commit to avoid a circular hash. No public asset location is invented before publication.
+The 23 numbered archives are attached to the historical evidence release at <https://github.com/runners-family/airdrop-verification/releases/tag/replay-v1-2026-10-21>. `PUBLICATION.json` records their current index pin and their byte-for-byte equivalence to the reviewed archive payloads. `REVIEW.json` is the historical pre-publication review: its original index pin describes the same archive contents under their earlier labels. The replay executable files and the locked allocation are unchanged. The fetch step above downloads and verifies each archive and every extracted member; it uses no credentials. Alternatively, download all 23 attachments into `artifacts/` and replace `--base-url` with `--from-directory artifacts`.
 
 `reproduce.py --all` validates the full file inventory, rebuilds all category prelists from source facts, rebuilds the service/cluster exclusions, compares every exclusion reason and final category list, then calculates the allocations using the regenerated lists. Supplied expected lists are comparison targets. They are never the full replay's selector inputs. A missing stage, capture, required proof, mismatching list or CSV prevents a full success result.
 
@@ -45,10 +45,10 @@ After reviewing the scripts, run the boundary/decoder/privacy fixtures and the s
 ```sh
 python3 -I -B -m unittest discover -s tests
 python3 -I -B tests/adversarial_replay.py --data evidence --manifest-sha256 9b536b62069f3dd38b752dcd3562fad05fe67ea30252d496965e0aab48e642cc --out adversarial-replay
-python3 -I -B privacy_scan.py artifacts --asset-index evidence-index.json --asset-index-sha256 9fd895460c9dbe59c3e10b98cb805b1debc629b6bcd8814f4116920bf198689b
+python3 -I -B privacy_scan.py artifacts --asset-index evidence-index.json --asset-index-sha256 1fa56336a7da5fb8f2406e98b4bbe891ea309d5e7ee45ba2c01cf95c67744cb2
 ```
 
-The archive scan decompresses every member and retained encoded field and checks exact indexed coverage; it can take longer than replay. Private-marker checks used for this local review are supplied separately and are never part of the public payload. The six exact reviewed public-resource URL exceptions for code/metadata scans are listed in `REVIEW.json`; RPC endpoints have no exception.
+The archive scan decompresses every member and retained encoded field and checks exact indexed coverage; it can take longer than replay. Private-marker checks used for this local review are supplied separately and are never part of the public payload. The exact reviewed public-resource and release URL exceptions for code/metadata scans are listed in `REVIEW.json`; RPC endpoints have no exception.
 
 ## Files and outcomes
 
