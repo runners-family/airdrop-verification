@@ -1,0 +1,13 @@
+'use strict';
+const assert = require('node:assert/strict');
+const c = require('../replay/offline-codecs.cjs');
+const {PublicKey} = require('../replay/offline-publickey.cjs');
+assert.equal(c.getU64Codec().decode(Buffer.alloc(8, 255)), (1n << 64n) - 1n);
+assert.throws(() => c.getU64Codec().decode(Buffer.alloc(7)), /Truncated/);
+assert.throws(() => c.getBooleanCodec().decode(Buffer.from([2])), /boolean/);
+assert.throws(() => c.getArrayCodec(c.getU64Codec()).decode(Buffer.from([255,255,255,255])), /bound/);
+assert.throws(() => c.getDiscriminatedUnionCodec([['Only', c.getStructCodec([])]]).decode(Buffer.from([1])), /variant/);
+assert.equal(JSON.stringify(c.getBytesCodec().decode(Buffer.from([1,2]))), '{"type":"Buffer","data":[1,2]}');
+assert.equal(new PublicKey(Buffer.alloc(32)).toBase58(), '1'.repeat(32));
+assert.throws(() => new PublicKey(Buffer.alloc(31)), /length/);
+console.log('codec boundary tests passed');
