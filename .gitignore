@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 reviewer/
+artifacts/
+evidence/
+replay-output/
+full-replay/
+adversarial-replay/
+runtime/
+.runtime/
+.reviewer-tools/
+node_modules/
+.venv/
+*.private-provenance.json

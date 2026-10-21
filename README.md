@@ -38,6 +38,18 @@ python3 -I -B verify.py --wallet PARTICIPANT_ADDRESS
 
 That command starts from the final lists and does not establish source eligibility. A full replay can also produce a per-wallet explanation using `--wallet PARTICIPANT_ADDRESS`.
 
+## Additional checks
+
+After reviewing the scripts, run the boundary/decoder/privacy fixtures and the source-consistency mutation tests. The mutation harness uses temporary hardlinked copies, replaces files before modifying them, and leaves the evidence unchanged.
+
+```sh
+python3 -I -B -m unittest discover -s tests
+python3 -I -B tests/adversarial_replay.py --data evidence --manifest-sha256 9b536b62069f3dd38b752dcd3562fad05fe67ea30252d496965e0aab48e642cc --out adversarial-replay
+python3 -I -B privacy_scan.py artifacts --asset-index evidence-index.json --asset-index-sha256 9fd895460c9dbe59c3e10b98cb805b1debc629b6bcd8814f4116920bf198689b
+```
+
+The archive scan decompresses every member and retained encoded field and checks exact indexed coverage; it can take longer than replay. Private-marker checks used for this local review are supplied separately and are never part of the public payload. The six exact reviewed public-resource URL exceptions for code/metadata scans are listed in `REVIEW.json`; RPC endpoints have no exception.
+
 ## Files and outcomes
 
 - `claims.csv`, `wallets/`, `allocation.json`: unchanged locked gross allocation inputs and comparison targets.
